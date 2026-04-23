@@ -70,4 +70,4 @@ For questions or requests, please contact [J. Heinzmann](mailto:jheinzmann@ethz.
 
 We gratefully acknowledge funding from the Swiss National Science Foundation (SNF) through Grant No. [200021-219407 'Phase-field modeling of fracture and fatigue: from rigorous theory to fast predictive simulations'](https://data.snf.ch/grants/grant/219407).
 
-<small>Copyright © 2025 ETH Zürich, Jonas Heinzmann, Francesco Vicentini, Pietro Carrara, Laura De Lorenzis</small>
+<small>© 2025 ETH Zürich</small>
