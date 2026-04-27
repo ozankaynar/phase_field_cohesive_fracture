@@ -21,7 +21,7 @@
 #
 # SPDX-License-Identifier: MIT
 
-import ufl
+import ufl_legacy as ufl
 from dolfin import (
     Function,
     assemble,

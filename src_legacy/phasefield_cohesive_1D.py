@@ -43,7 +43,7 @@ from dolfin import (
     as_backend_type,
     project,
 )
-import ufl
+import ufl_legacy as ufl
 import time
 import argparse
 
