@@ -65,10 +65,11 @@ class SNESProblem:
         self.objective = objective
 
         # Pre-allocate dolfin PETSc containers.
-        # Assembling once populates the sparsity pattern and creates correctly
-        # sized PETSc objects; subsequent calls to assemble(form, tensor=…)
-        # reuse the same PETSc Vec / Mat, so the SNES object's function/Jacobian
-        # references remain valid throughout the solve.
+        # The first assembly here is intentional: it populates the sparsity
+        # pattern and creates correctly sized PETSc Vec / Mat objects.
+        # All subsequent calls in the F() and J() callbacks reuse these same
+        # objects via assemble(form, tensor=…), so the PETSc Vec / Mat
+        # references registered with the SNES remain valid throughout the solve.
         self._b_dolfin = PETScVector()
         assemble(self.L, tensor=self._b_dolfin)
 
